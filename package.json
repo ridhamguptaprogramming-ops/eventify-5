@@ -1,0 +1,34 @@
+{
+  "name": "eventify-5",
+  "version": "1.0.0",
+  "description": "Premium event attendance website with animated frontend, email verification, and attendance dashboard.",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js",
+    "check": "node --check server.js && node --check src/app.js && node --check src/controllers/authController.js && node --check src/controllers/eventController.js && node --check src/controllers/adminController.js && node --check public/assets/js/main.js && node --check public/assets/js/dashboard.js && node --check public/assets/js/admin.js && node --check public/assets/js/verify.js"
+  },
+  "keywords": [
+    "event",
+    "attendance",
+    "express",
+    "mongodb",
+    "animation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "express-validator": "^7.2.1",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.7.2",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.9.15",
+    "qrcode": "^1.5.4"
+  }
+}
